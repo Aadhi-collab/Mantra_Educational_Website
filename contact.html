@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration & Admissions | Aegis Institute</title>
+    <meta name="description" content="Secure your seat at Aegis Institute. Fill out our responsive student enrollment and technical query form.">
+    <meta name="keywords" content="Student Registration Form, Contact Admissions, Enrollment Registry">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">AEGIS <span>INSTITUTE</span></div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html" class="active">Registration</a></li>
+            </ul>
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Student Registration & Inquiries</h1>
+                <p>Take the definitive first step toward professional mastery. Fill out the validation-secured portal below.</p>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <div class="container">
+                <div class="contact-wrapper">
+                    <!-- Contact Metadata details -->
+                    <div class="contact-info-panel">
+                        <h2>Admissions HQ Details</h2>
+                        <p>Have structural queries regarding curriculum tracks, entry protocols, or scheduling?</p>
+                        
+                        <div class="info-block">
+                            <strong>📍 Campus Address:</strong>
+                            <p>Aegis Academic Center Block 4, Sector 12, Main Tech Highway Corridor</p>
+                        </div>
+                        <div class="info-block">
+                            <strong>✉️ Electronic Mail Box:</strong>
+                            <p>admissions@aegis-institute.edu</p>
+                        </div>
+                        <div class="info-block">
+                            <strong>📞 Telephone Desk Helpline:</strong>
+                            <p>+1 (555) 019-2834 (Mon-Fri, 9 AM - 5 PM)</p>
+                        </div>
+                    </div>
+
+                    <!-- Secure Interactive Registration Form -->
+                    <div class="form-panel">
+                        <h2>Enrollment Request Form</h2>
+                        <p id="formStatus" class="form-status-message"></p>
+                        
+                        <form id="registrationForm" novalidate>
+                            <div class="form-group">
+                                <label for="fullName">Full Name *</label>
+                                <input type="text" id="fullName" placeholder="Enter your full name">
+                                <span class="error-msg" id="nameError">Full name must be at least 3 letters long.</span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="studentEmail">Email Address *</label>
+                                <input type="email" id="studentEmail" placeholder="yourname@domain.com">
+                                <span class="error-msg" id="emailError">Please input a valid email address format.</span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="selectedTrack">Primary Academic Track *</label>
+                                <select id="selectedTrack">
+                                    <option value="">-- Choose an Option --</option>
+                                    <option value="data-science">Predicting the Future with Data Science</option>
+                                    <option value="cybersecurity">Network Architecture & Exploitation (CTF Focused)</option>
+                                    <option value="python-dev">Interactive Scripts & Advanced Python Systems</option>
+                                </select>
+                                <span class="error-msg" id="trackError">Please select one of our primary specialized tracks.</span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="userMessage">Additional Details or Prior Technical Experience</label>
+                                <textarea id="userMessage" rows="4" placeholder="Briefly let us know about your programming background or expectations..."></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary full-btn">Submit Registry Application</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Aegis Institute of Technology & Data Science. Developed for MANTRA 2026 Summer School Assignment.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
