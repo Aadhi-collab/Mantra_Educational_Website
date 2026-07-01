@@ -1,6 +1,6 @@
 # Aegis Institute Website
 
-Static frontend website built for the MANTRA 2026 Summer School Assignment 1.
+Static frontend website built for the MANTRA 2026  Assignment 1.
 
 ## Features
 - Full semantic structure with clean HTML5 layouts.
